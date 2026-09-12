@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi's Restaurant | Authentic Flavors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c5a059; /* Elegant Gold */
+            --bg-dark: #121212;
+            --text-light: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: #fff; }
+
+        /* Quick Info Bar */
+        .info-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            background: var(--bg-dark);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .info-item h4 { color: var(--primary); margin-bottom: 10px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+        .info-item p { margin: 5px 0; font-weight: 300; }
+
+        /* Main Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 80px 10%;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* Owner Profile Side */
+        .owner-side h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 20px; }
+        .owner-note { font-style: italic; color: #555; line-height: 1.8; border-left: 3px solid var(--primary); padding-left: 20px; margin-bottom: 30px; }
+        .owner-meta { display: flex; align-items: center; gap: 15px; }
+        .owner-avatar { width: 60px; height: 60px; border-radius: 50%; background: #eee; object-fit: cover; }
+
+        /* Form Side */
+        .form-side { background: #fdfdfd; padding: 40px; border: 1px solid #eee; border-radius: 4px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.9rem; margin-bottom: 8px; font-weight: 600; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; box-sizing: border-box;
+        }
+        .submit-btn {
+            background: var(--bg-dark); color: white; padding: 15px 30px; border: none; 
+            cursor: pointer; width: 100%; font-weight: 600; transition: 0.3s;
+        }
+        .submit-btn:hover { background: var(--primary); }
+
+        @media (max-width: 900px) {
+            .contact-container { grid-template-columns: 1fr; padding: 40px 5%; }
+        }
+        header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: -20px;
+}
+.logo { font-size: 1.5rem; font-weight: bold; }
+.logo span { color: #e67e22; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin: 0 15px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+ <header>
+        <nav>
+            <div class="logo">Abhi's <span>Restaurant</span></div>
+            <ul>
+                <li><a href="C:\Users\shiva\OneDrive\Desktop\shivanshd\My project\index.html">Home</a></li>
+                   <li><a href="C:\Users\shiva\OneDrive\Desktop\shivanshd\My project\crm.html">Order Now</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="C:\Users\shiva\OneDrive\Desktop\shivanshd\My project\about.html">About</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <div class="info-bar">
+        <div class="info-item">
+            <h4>Location</h4>
+            <p>123, Chhaparaula Lalkuan, Ghaziabad</p>
+            <p>India, 201009</p>
+        </div>
+        <div class="info-item">
+            <h4>Reservations</h4>
+            <p>+91 8595034733</p>
+            <p>+91 9355473370</p>
+            <p>book@yourrestaurant.com</p>
+        </div>
+        <div class="info-item">
+            <h4>Opening Hours</h4>
+            <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+        </div>
+    </div>
+
+    <section class="contact-container">
+        
+        <div class="owner-side">
+            <h2>A Message From Our Founder</h2>
+            <p class="owner-note">
+                "I believe that a great meal is the shortest distance between two people. Whether you have a question about our menu, a suggestion for improvement, or just want to share your dining experience, I am always listening."
+            </p>
+            <p>For private events, catering inquiries, or partnership opportunities, please reach out directly via the form or our official phone line. We aim to respond to all inquiries within 24 hours.</p>
+            
+            <div class="owner-meta">
+                <img src="update.jpeg" alt="Owner Name" class="owner-avatar">
+                <div>
+                    <strong>Abhi</strong><br>
+                    <small style="color: var(--primary);">Restaurant Owner & Head Chef</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-side">
+            <form action="#">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Inquiry about...">
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea rows="5" placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+</body>
+</html>

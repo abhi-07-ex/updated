@@ -1,0 +1,227 @@
+/* style.css */
+
+/* Basic reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a68c71; /* Background color of the container, simulating the surface the tablet is resting on */
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto; /* Center the tablet on the page with top/bottom margin */
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden; /* Rounds the corners of contents */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left main content */
+.menu-section {
+    flex: 2; /* 2/3 of space */
+    padding: 20px;
+}
+
+.header {
+    background-color: #5d3f2d;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.restaurant-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.table-info {
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+.cart-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.user-avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories li {
+    margin-right: 30px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.category-link.active {
+    color: #000;
+    border-bottom: 2px solid #5d3f2d;
+    font-weight: bold;
+}
+
+.menu-items-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.item-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item-details {
+    padding: 15px;
+}
+
+.item-name {
+    margin: 0 0 5px;
+    font-size: 1rem;
+}
+
+.item-description {
+    margin: 0 0 15px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.add-to-cart {
+    background-color:darkgreen;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color:black;
+}
+
+/* Right order panel */
+.order-section {
+    flex: 1; /* 1/3 of space */
+    background-color: #fafafa;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-heading {
+    margin: 0 0 20px;
+    font-size: 1.1rem;
+}
+
+.order-list {
+    flex: 1; /* Pushes content down */
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    color: #555;
+}
+
+.total-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 0.9rem;
+    padding: 5px 0;
+}
+
+.total-row.main-total {
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+
+.place-order-button {
+    background-color: #1a7051;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto; /* Attaches it to the bottom of the column */
+}
+.add-to-cart:hover{
+    background-color:rgb(34, 34, 198);
+    color: black;
+}
+.menu-item-d{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+}

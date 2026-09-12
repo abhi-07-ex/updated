@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #333;
+    color: rgb(187, 211, 232);
+}
+:root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+        }
+
+        body { margin: 0; font-family: 'Poppins', sans-serif; }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 80px 10%;
+            background-color: var(--light);
+            gap: 50px;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 20px 20px 0px var(--gold);
+        }
+
+        .about-content {
+            flex: 1 1 400px;
+        }
+
+        .about-content span {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .about-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 10px 0 20px;
+            color: var(--dark);
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .btn-discover {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid var(--gold);
+            color: var(--dark);
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-discover:hover {
+            background-color: var(--gold);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .about-section { padding: 40px 5%; }
+            .about-content h2 { font-size: 2.2rem; }
+        }
